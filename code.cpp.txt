@@ -6,10 +6,18 @@ using namespace std;
 
 void main()
 {
-int A;
+int A, B=5;
 int a = 1, b = 1, c = a + b;
 printf("Enter A");
 scanf("%d", &A);
+printf("%d", &B);
+while (c < A){
+if (c % 2)
+cout << c << " ";
+a = b;
+b = c;
+c = a + b;
+}
 
 system("pause");
 }
